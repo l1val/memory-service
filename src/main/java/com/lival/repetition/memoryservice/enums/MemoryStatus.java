@@ -1,4 +1,4 @@
-package com.lival.repetition.coreservice.enums;
+package com.lival.repetition.memoryservice.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
