@@ -1,6 +1,6 @@
-package com.lival.repetition.coreservice.entity;
+package com.lival.repetition.memoryservice.entity;
 
-import com.lival.repetition.coreservice.enums.MemoryStatus;
+import com.lival.repetition.memoryservice.enums.MemoryStatus;
 import lombok.Data;
 
 import javax.persistence.*;

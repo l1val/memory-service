@@ -1,4 +1,4 @@
-package com.lival.repetition.coreservice.web;
+package com.lival.repetition.memoryservice.web;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

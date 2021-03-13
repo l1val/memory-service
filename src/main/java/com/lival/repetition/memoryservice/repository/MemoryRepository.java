@@ -1,7 +1,7 @@
-package com.lival.repetition.coreservice.repository;
+package com.lival.repetition.memoryservice.repository;
 
-import com.lival.repetition.coreservice.entity.Memory;
-import com.lival.repetition.coreservice.enums.MemoryStatus;
+import com.lival.repetition.memoryservice.entity.Memory;
+import com.lival.repetition.memoryservice.enums.MemoryStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
