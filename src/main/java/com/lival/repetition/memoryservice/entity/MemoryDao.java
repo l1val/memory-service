@@ -1,7 +1,10 @@
 package com.lival.repetition.memoryservice.entity;
 
 import com.lival.repetition.memoryservice.enums.MemoryStatus;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -11,7 +14,10 @@ import static javax.persistence.GenerationType.SEQUENCE;
 @Entity
 @Data
 @Table(name = "memory")
-public class Memory {
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class MemoryDao {
 
     @Id
     @SequenceGenerator(name = "memory_seq", sequenceName = "memory_seq",  allocationSize = 1)
@@ -31,7 +37,9 @@ public class Memory {
 
     @PrePersist
     public void setCreatedAt() {
-        this.createdAt = LocalDateTime.now();
+        LocalDateTime now = LocalDateTime.now();
+        this.createdAt = now;
+        this.updatedAt = now;
     }
 
     @PreUpdate
